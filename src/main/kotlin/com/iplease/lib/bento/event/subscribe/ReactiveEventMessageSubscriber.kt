@@ -1,8 +1,8 @@
-package com.iplease.lib.bento.subscribe
+package com.iplease.lib.bento.event.subscribe
 
-import com.iplease.lib.bento.message.Message
-import com.iplease.lib.bento.data.EventData
-import com.iplease.lib.bento.type.EventTypes
+import com.iplease.lib.bento.event.message.Message
+import com.iplease.lib.bento.event.data.EventData
+import com.iplease.lib.bento.event.type.EventTypes
 import reactor.core.publisher.Mono
 import kotlin.reflect.KClass
 import kotlin.reflect.cast

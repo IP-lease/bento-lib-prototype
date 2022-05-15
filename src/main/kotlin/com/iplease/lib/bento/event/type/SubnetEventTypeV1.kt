@@ -1,8 +1,7 @@
-package com.iplease.lib.bento.type
+package com.iplease.lib.bento.event.type
 
-import com.iplease.lib.bento.data.EventData
+import com.iplease.lib.bento.event.data.EventData
 import kotlin.reflect.KClass
-
 
 enum class SubnetEventTypeV1(
     private val routingKey: String,
