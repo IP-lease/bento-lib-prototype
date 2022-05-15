@@ -1,4 +1,4 @@
-package com.iplease.lib.bento.event.message
+package com.iplease.lib.bento.global.message
 
 interface Message {
     fun getPayload(): ByteArray?
