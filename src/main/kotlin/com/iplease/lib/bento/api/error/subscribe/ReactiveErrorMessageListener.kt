@@ -3,14 +3,14 @@ package com.iplease.lib.bento.api.error.subscribe
 import com.iplease.lib.bento.api.error.data.ErrorData
 import com.iplease.lib.bento.api.error.type.ErrorTypes
 import com.iplease.lib.bento.api.global.message.Message
-import com.iplease.lib.bento.api.global.subscribe.MessageSubscriber
+import com.iplease.lib.bento.api.global.listener.MessageListener
 import reactor.core.publisher.Mono
 import kotlin.reflect.KClass
 import kotlin.reflect.cast
 
-abstract class ReactiveErrorMessageSubscriber<T: ErrorData> (
+abstract class ReactiveErrorMessageListener<T: ErrorData> (
     private val type: KClass<T>
-): MessageSubscriber {
+): MessageListener {
     private val error = ErrorTypes.of(type)
 
     override fun subscribe(data: Message) {

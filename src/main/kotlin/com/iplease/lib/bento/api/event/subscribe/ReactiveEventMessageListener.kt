@@ -3,14 +3,14 @@ package com.iplease.lib.bento.api.event.subscribe
 import com.iplease.lib.bento.api.global.message.Message
 import com.iplease.lib.bento.api.event.data.EventData
 import com.iplease.lib.bento.api.event.type.EventTypes
-import com.iplease.lib.bento.api.global.subscribe.MessageSubscriber
+import com.iplease.lib.bento.api.global.listener.MessageListener
 import reactor.core.publisher.Mono
 import kotlin.reflect.KClass
 import kotlin.reflect.cast
 
-abstract class ReactiveEventMessageSubscriber<T: EventData> (
+abstract class ReactiveEventMessageListener<T: EventData> (
     private val type: KClass<T>
-): MessageSubscriber {
+): MessageListener {
     private val event = EventTypes.of(type)
 
     override fun subscribe(data: Message) {
