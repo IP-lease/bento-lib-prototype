@@ -3,6 +3,7 @@ package com.iplease.lib.bento.impl.event.type
 import com.iplease.lib.bento.api.event.data.EventData
 import com.iplease.lib.bento.api.event.type.EventType
 import com.iplease.lib.bento.impl.event.data.ip.release.IpReleaseSuccessEvent
+import com.iplease.lib.bento.util.RoutingKeys
 import kotlin.reflect.KClass
 
 enum class IpReleaseEventTypeV1(
@@ -11,6 +12,6 @@ enum class IpReleaseEventTypeV1(
 ): EventType {
     IP_RELEASE_SUCCESS("v1.event.ip.release.released", IpReleaseSuccessEvent::class);
 
-    override fun getRoutingKey() = routingKey
+    override fun getRoutingKey() = RoutingKeys.of(routingKey)
     override fun getEventDataType() = eventDataType
 }

@@ -7,6 +7,7 @@ import com.iplease.lib.bento.impl.event.data.ip.demand.info.IpDemandInfoUpdateEv
 import com.iplease.lib.bento.impl.event.data.ip.demand.status.IpDemandStatusAcceptEvent
 import com.iplease.lib.bento.impl.event.data.ip.demand.status.IpDemandStatusConfirmEvent
 import com.iplease.lib.bento.impl.event.data.ip.demand.status.IpDemandStatusRejectEvent
+import com.iplease.lib.bento.util.RoutingKeys
 import kotlin.reflect.KClass
 
 enum class IpDemandEventTypeV1(
@@ -21,6 +22,6 @@ enum class IpDemandEventTypeV1(
     IP_DEMAND_SUCCESS("v1.event.ip.demand.success", IpDemandSuccessEvent::class),
     IP_DEMAND_FAILED("v1.event.ip.demand.failed", IpDemandFailedEvent::class);
 
-    override fun getRoutingKey() = routingKey
+    override fun getRoutingKey() = RoutingKeys.of(routingKey)
     override fun getEventDataType() = eventDataType
 }
