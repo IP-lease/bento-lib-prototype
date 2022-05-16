@@ -5,5 +5,5 @@ import kotlin.reflect.KClass
 
 interface ErrorType {
     fun getRoutingKey(): RoutingKey<*>
-    fun getErrorDataType(): KClass<out ErrorData>
+    fun getErrorDataType(): KClass<out ErrorPayload>
 }

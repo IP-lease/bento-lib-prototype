@@ -5,5 +5,5 @@ import kotlin.reflect.KClass
 
 interface EventType {
     fun getRoutingKey(): RoutingKey<*>
-    fun getEventDataType(): KClass<out EventData>
+    fun getEventDataType(): KClass<out EventPayload>
 }

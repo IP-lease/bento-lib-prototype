@@ -1,6 +1,6 @@
 package com.iplease.lib.bento.util
 
-import com.iplease.lib.bento.api.event.EventData
+import com.iplease.lib.bento.api.event.EventPayload
 import com.iplease.lib.bento.api.event.EventType
 import kotlin.reflect.KClass
 
@@ -11,6 +11,6 @@ object EventTypes {
         types.addAll(type)
     }
 
-    fun of(eventDataType: KClass<out EventData>) =
-        types.find { it.getEventDataType() == eventDataType }!!
+    fun of(eventPayloadType: KClass<out EventPayload>) =
+        types.find { it.getEventDataType() == eventPayloadType }!!
 }

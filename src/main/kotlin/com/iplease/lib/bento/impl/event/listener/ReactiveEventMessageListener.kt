@@ -1,14 +1,14 @@
 package com.iplease.lib.bento.impl.event.listener
 
 import com.iplease.lib.bento.api.global.message.Message
-import com.iplease.lib.bento.api.event.EventData
+import com.iplease.lib.bento.api.event.EventPayload
 import com.iplease.lib.bento.util.EventTypes
 import com.iplease.lib.bento.api.global.listener.MessageListener
 import reactor.core.publisher.Mono
 import kotlin.reflect.KClass
 import kotlin.reflect.cast
 
-abstract class ReactiveEventMessageListener<T: EventData> (
+abstract class ReactiveEventMessageListener<T: EventPayload> (
     private val type: KClass<T>
 ): MessageListener {
     private val event = EventTypes.of(type)

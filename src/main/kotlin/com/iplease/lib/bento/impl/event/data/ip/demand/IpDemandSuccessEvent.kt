@@ -1,6 +1,6 @@
 package com.iplease.lib.bento.impl.event.data.ip.demand
 
-import com.iplease.lib.bento.api.event.EventData
+import com.iplease.lib.bento.api.event.EventPayload
 import java.time.LocalDate
 
 data class IpDemandSuccessEvent (
@@ -13,4 +13,4 @@ data class IpDemandSuccessEvent (
     val ipSecond: Int,
     val ipThird: Int,
     val ipFourth: Int
-): EventData
+): EventPayload

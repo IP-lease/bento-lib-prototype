@@ -1,6 +1,6 @@
 package com.iplease.lib.bento.impl.error.type
 
-import com.iplease.lib.bento.api.error.ErrorData
+import com.iplease.lib.bento.api.error.ErrorPayload
 import com.iplease.lib.bento.api.error.ErrorType
 import com.iplease.lib.bento.impl.error.data.ip.demand.IpDemandCreateError
 import com.iplease.lib.bento.impl.error.data.ip.demand.IpDemandFailedError
@@ -15,7 +15,7 @@ import kotlin.reflect.KClass
 @Suppress("unused")
 enum class IpDemandErrorTypeV1(
     private val routingKey: String,
-    private val eventDataType: KClass<out ErrorData>
+    private val eventDataType: KClass<out ErrorPayload>
 ): ErrorType {
     IP_DEMAND_INFO_UPDATE("v1.error.ip.demand.info.update", IpDemandInfoUpdateError::class),
     IP_DEMAND_CREATE("v1.error.ip.demand.create", IpDemandCreateError::class),

@@ -1,6 +1,6 @@
 package com.iplease.lib.bento.impl.error.data.ip.demand
 
-import com.iplease.lib.bento.api.error.ErrorData
+import com.iplease.lib.bento.api.error.ErrorPayload
 import java.time.LocalDate
 
 data class IpDemandSuccessError (
@@ -13,4 +13,4 @@ data class IpDemandSuccessError (
     val ipSecond: Int,
     val ipThird: Int,
     val ipFourth: Int
-): ErrorData
+): ErrorPayload

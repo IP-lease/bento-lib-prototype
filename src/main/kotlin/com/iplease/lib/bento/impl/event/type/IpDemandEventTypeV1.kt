@@ -1,6 +1,6 @@
 package com.iplease.lib.bento.impl.event.type
 
-import com.iplease.lib.bento.api.event.EventData
+import com.iplease.lib.bento.api.event.EventPayload
 import com.iplease.lib.bento.api.event.EventType
 import com.iplease.lib.bento.impl.event.data.ip.demand.*
 import com.iplease.lib.bento.impl.event.data.ip.demand.info.IpDemandInfoUpdateEvent
@@ -13,7 +13,7 @@ import kotlin.reflect.KClass
 @Suppress("unused")
 enum class IpDemandEventTypeV1(
     private val routingKey: String,
-    private val eventDataType: KClass<out EventData>
+    private val eventPayloadType: KClass<out EventPayload>
 ): EventType {
     IP_DEMAND_INFO_UPDATE("v1.event.ip.demand.info.update", IpDemandInfoUpdateEvent::class),
     IP_DEMAND_CREATE("v1.event.ip.demand.create", IpDemandCreateEvent::class),
@@ -24,5 +24,5 @@ enum class IpDemandEventTypeV1(
     IP_DEMAND_FAILED("v1.event.ip.demand.failed", IpDemandFailedEvent::class);
 
     override fun getRoutingKey() = RoutingKeys.of(routingKey)
-    override fun getEventDataType() = eventDataType
+    override fun getEventDataType() = eventPayloadType
 }
