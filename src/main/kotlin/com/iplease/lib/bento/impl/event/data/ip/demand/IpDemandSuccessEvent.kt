@@ -13,4 +13,6 @@ data class IpDemandSuccessEvent (
     val ipSecond: Int,
     val ipThird: Int,
     val ipFourth: Int
-): EventPayload
+): EventPayload<IpDemandSuccessEvent> {
+    override fun getValue() = this
+}

@@ -4,4 +4,6 @@ import com.iplease.lib.bento.api.event.EventPayload
 
 data class IpDemandInfoUpdateEvent(
     val demandUuid: Long
-): EventPayload
+): EventPayload<IpDemandInfoUpdateEvent> {
+    override fun getValue() = this
+}

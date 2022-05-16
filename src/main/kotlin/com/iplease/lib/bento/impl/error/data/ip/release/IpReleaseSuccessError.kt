@@ -6,4 +6,6 @@ data class IpReleaseSuccessError (
     val assignedIpUuid: Long,
     val demandUuid: Long,
     val operatorUuid: Long
-): ErrorPayload
+): ErrorPayload<IpReleaseSuccessError> {
+    override fun getValue() = this
+}

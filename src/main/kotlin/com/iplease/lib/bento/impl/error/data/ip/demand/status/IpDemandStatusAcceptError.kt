@@ -7,4 +7,6 @@ data class IpDemandStatusAcceptError (
     val issuerUuid: Long,
     val managerUuid: Long,
     val demandedIp: String
-): ErrorPayload
+): ErrorPayload<IpDemandStatusAcceptError> {
+    override fun getValue() = this
+}

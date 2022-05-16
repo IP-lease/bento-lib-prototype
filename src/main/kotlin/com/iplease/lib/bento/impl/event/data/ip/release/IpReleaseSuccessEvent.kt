@@ -6,4 +6,6 @@ data class IpReleaseSuccessEvent (
     val assignedIpUuid: Long,
     val demandUuid: Long,
     val operatorUuid: Long
-): EventPayload
+): EventPayload<IpReleaseSuccessEvent> {
+    override fun getValue() = this
+}

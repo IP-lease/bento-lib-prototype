@@ -13,4 +13,6 @@ data class IpDemandSuccessError (
     val ipSecond: Int,
     val ipThird: Int,
     val ipFourth: Int
-): ErrorPayload
+): ErrorPayload<IpDemandSuccessError> {
+    override fun getValue() = this
+}

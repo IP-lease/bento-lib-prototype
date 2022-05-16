@@ -7,4 +7,6 @@ data class IpDemandStatusAcceptEvent (
     val issuerUuid: Long,
     val managerUuid: Long,
     val demandedIp: String
-): EventPayload
+): EventPayload<IpDemandStatusAcceptEvent> {
+    override fun getValue() = this
+}

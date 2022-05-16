@@ -1,3 +1,5 @@
 package com.iplease.lib.bento.api.event
 
-interface EventPayload
+import com.iplease.lib.bento.api.common.message.payload.Payload
+
+interface EventPayload<T>: Payload<T>

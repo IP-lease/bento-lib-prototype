@@ -4,4 +4,6 @@ import com.iplease.lib.bento.api.error.ErrorPayload
 
 data class IpDemandCreateError (
     val demandUuid: Long,
-): ErrorPayload
+): ErrorPayload<IpDemandCreateError> {
+    override fun getValue() = this
+}

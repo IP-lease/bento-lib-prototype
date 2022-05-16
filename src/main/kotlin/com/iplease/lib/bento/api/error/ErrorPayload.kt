@@ -1,3 +1,5 @@
 package com.iplease.lib.bento.api.error
 
-interface ErrorPayload
+import com.iplease.lib.bento.api.common.message.payload.Payload
+
+interface ErrorPayload<T>: Payload<T>

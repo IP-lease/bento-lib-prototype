@@ -4,4 +4,6 @@ import com.iplease.lib.bento.api.event.EventPayload
 
 data class IpDemandStatusConfirmEvent (
     val demandUuid: Long,
-): EventPayload
+): EventPayload<IpDemandStatusConfirmEvent> {
+    override fun getValue() = this
+}
