@@ -12,6 +12,7 @@ import com.iplease.lib.bento.impl.error.data.ip.demand.status.IpDemandStatusReje
 import com.iplease.lib.bento.util.RoutingKeys
 import kotlin.reflect.KClass
 
+@Suppress("unused")
 enum class IpDemandErrorTypeV1(
     private val routingKey: String,
     private val eventDataType: KClass<out ErrorData>

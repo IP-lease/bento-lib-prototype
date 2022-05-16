@@ -5,6 +5,7 @@ import com.iplease.lib.bento.api.error.type.ErrorType
 import com.iplease.lib.bento.util.RoutingKeys
 import kotlin.reflect.KClass
 
+@Suppress("unused")
 enum class GlobalErrorTypeV1(
     private val routingKey: String,
     private val eventDataType: KClass<out ErrorData>
