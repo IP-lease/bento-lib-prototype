@@ -7,7 +7,7 @@ import kotlin.reflect.KClass
 object EventTypes {
     private val types: MutableSet<EventType> = mutableSetOf()
 
-    fun addType(vararg type: EventType) {
+    fun addTypes(vararg type: EventType) {
         types.addAll(type)
     }
 

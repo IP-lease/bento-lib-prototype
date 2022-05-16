@@ -7,7 +7,7 @@ import kotlin.reflect.KClass
 object ErrorTypes {
     private val types: MutableSet<ErrorType> = mutableSetOf()
 
-    fun addType(vararg type: ErrorType) {
+    fun addTypes(vararg type: ErrorType) {
         types.addAll(type)
     }
 
