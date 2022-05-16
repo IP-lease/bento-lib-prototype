@@ -1,4 +1,4 @@
-package com.iplease.lib.bento.impl.global.publish
+package com.iplease.lib.bento.impl.common.publish
 
 import com.iplease.lib.bento.api.common.message.payload.PayloadFormatter
 import com.iplease.lib.bento.api.common.message.routingkey.RoutingKeyFormatter

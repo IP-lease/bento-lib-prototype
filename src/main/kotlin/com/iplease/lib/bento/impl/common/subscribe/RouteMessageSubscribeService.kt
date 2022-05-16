@@ -1,4 +1,4 @@
-package com.iplease.lib.bento.impl.global.subscribe
+package com.iplease.lib.bento.impl.common.subscribe
 
 import com.iplease.lib.bento.api.common.listener.MessageListener
 import com.iplease.lib.bento.api.common.message.Message
