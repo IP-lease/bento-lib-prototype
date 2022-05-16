@@ -1,4 +1,4 @@
-package com.iplease.lib.bento.api.global.message.payload
+package com.iplease.lib.bento.api.common.message.payload
 
 interface PayloadFormatter<T> {
     fun format(data: T): Payload<*>

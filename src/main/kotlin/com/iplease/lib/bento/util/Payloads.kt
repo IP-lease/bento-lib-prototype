@@ -1,6 +1,6 @@
 package com.iplease.lib.bento.util
 
-import com.iplease.lib.bento.api.global.message.payload.PayloadFactory
+import com.iplease.lib.bento.api.common.message.payload.PayloadFactory
 import kotlin.reflect.KClass
 
 @Suppress("unchecked_cast")

@@ -2,8 +2,8 @@ package com.iplease.lib.bento.impl.error.listener
 
 import com.iplease.lib.bento.api.error.ErrorPayload
 import com.iplease.lib.bento.util.ErrorTypes
-import com.iplease.lib.bento.api.global.message.Message
-import com.iplease.lib.bento.api.global.listener.MessageListener
+import com.iplease.lib.bento.api.common.message.Message
+import com.iplease.lib.bento.api.common.listener.MessageListener
 import reactor.core.publisher.Mono
 import kotlin.reflect.KClass
 import kotlin.reflect.cast

@@ -1,9 +1,9 @@
 package com.iplease.lib.bento.impl.event.listener
 
-import com.iplease.lib.bento.api.global.message.Message
+import com.iplease.lib.bento.api.common.message.Message
 import com.iplease.lib.bento.api.event.EventPayload
 import com.iplease.lib.bento.util.EventTypes
-import com.iplease.lib.bento.api.global.listener.MessageListener
+import com.iplease.lib.bento.api.common.listener.MessageListener
 import reactor.core.publisher.Mono
 import kotlin.reflect.KClass
 import kotlin.reflect.cast

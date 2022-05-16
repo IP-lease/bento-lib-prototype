@@ -1,8 +1,8 @@
 package com.iplease.lib.bento.impl.global.publish
 
-import com.iplease.lib.bento.api.global.message.payload.PayloadFormatter
-import com.iplease.lib.bento.api.global.message.routingkey.RoutingKeyFormatter
-import com.iplease.lib.bento.api.global.publish.TypedMessagePublishService
+import com.iplease.lib.bento.api.common.message.payload.PayloadFormatter
+import com.iplease.lib.bento.api.common.message.routingkey.RoutingKeyFormatter
+import com.iplease.lib.bento.api.common.publish.TypedMessagePublishService
 import com.iplease.lib.bento.util.Messages
 
 abstract class FormatSupportedMessagePublishService<K, V>: TypedMessagePublishService<K, V> {

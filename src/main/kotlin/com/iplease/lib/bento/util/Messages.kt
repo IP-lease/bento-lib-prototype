@@ -1,8 +1,8 @@
 package com.iplease.lib.bento.util
 
-import com.iplease.lib.bento.api.global.message.MessageFactory
-import com.iplease.lib.bento.api.global.message.payload.Payload
-import com.iplease.lib.bento.api.global.message.routingkey.RoutingKey
+import com.iplease.lib.bento.api.common.message.MessageFactory
+import com.iplease.lib.bento.api.common.message.payload.Payload
+import com.iplease.lib.bento.api.common.message.routingkey.RoutingKey
 
 object Messages {
     private lateinit var messageFactory: MessageFactory

@@ -1,6 +1,6 @@
 package com.iplease.lib.bento.util
 
-import com.iplease.lib.bento.api.global.message.routingkey.RoutingKeyFactory
+import com.iplease.lib.bento.api.common.message.routingkey.RoutingKeyFactory
 import kotlin.reflect.KClass
 
 @Suppress("unchecked_cast")
