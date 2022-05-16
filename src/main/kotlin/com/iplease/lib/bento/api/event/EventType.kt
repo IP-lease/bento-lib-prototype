@@ -1,6 +1,5 @@
-package com.iplease.lib.bento.api.event.type
+package com.iplease.lib.bento.api.event
 
-import com.iplease.lib.bento.api.event.data.EventData
 import com.iplease.lib.bento.api.global.message.routingkey.RoutingKey
 import kotlin.reflect.KClass
 

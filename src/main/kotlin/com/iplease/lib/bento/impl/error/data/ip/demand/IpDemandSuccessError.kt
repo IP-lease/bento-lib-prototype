@@ -1,6 +1,6 @@
 package com.iplease.lib.bento.impl.error.data.ip.demand
 
-import com.iplease.lib.bento.api.error.data.ErrorData
+import com.iplease.lib.bento.api.error.ErrorData
 import java.time.LocalDate
 
 data class IpDemandSuccessError (

@@ -1,7 +1,7 @@
 package com.iplease.lib.bento.impl.event.listener
 
 import com.iplease.lib.bento.api.global.message.Message
-import com.iplease.lib.bento.api.event.data.EventData
+import com.iplease.lib.bento.api.event.EventData
 import com.iplease.lib.bento.util.EventTypes
 import com.iplease.lib.bento.api.global.listener.MessageListener
 import reactor.core.publisher.Mono

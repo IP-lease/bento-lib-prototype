@@ -1,7 +1,7 @@
 package com.iplease.lib.bento.impl.event.type
 
-import com.iplease.lib.bento.api.event.data.EventData
-import com.iplease.lib.bento.api.event.type.EventType
+import com.iplease.lib.bento.api.event.EventData
+import com.iplease.lib.bento.api.event.EventType
 import com.iplease.lib.bento.impl.event.data.ip.demand.*
 import com.iplease.lib.bento.impl.event.data.ip.demand.info.IpDemandInfoUpdateEvent
 import com.iplease.lib.bento.impl.event.data.ip.demand.status.IpDemandStatusAcceptEvent

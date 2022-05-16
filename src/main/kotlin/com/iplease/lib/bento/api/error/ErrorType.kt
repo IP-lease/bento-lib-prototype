@@ -1,6 +1,5 @@
-package com.iplease.lib.bento.api.error.type
+package com.iplease.lib.bento.api.error
 
-import com.iplease.lib.bento.api.error.data.ErrorData
 import com.iplease.lib.bento.api.global.message.routingkey.RoutingKey
 import kotlin.reflect.KClass
 

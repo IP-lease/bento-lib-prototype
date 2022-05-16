@@ -1,6 +1,6 @@
 package com.iplease.lib.bento.impl.error.listener
 
-import com.iplease.lib.bento.api.error.data.ErrorData
+import com.iplease.lib.bento.api.error.ErrorData
 import com.iplease.lib.bento.util.ErrorTypes
 import com.iplease.lib.bento.api.global.message.Message
 import com.iplease.lib.bento.api.global.listener.MessageListener

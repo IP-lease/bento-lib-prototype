@@ -1,7 +1,7 @@
 package com.iplease.lib.bento.util
 
-import com.iplease.lib.bento.api.event.data.EventData
-import com.iplease.lib.bento.api.event.type.EventType
+import com.iplease.lib.bento.api.event.EventData
+import com.iplease.lib.bento.api.event.EventType
 import kotlin.reflect.KClass
 
 object EventTypes {
