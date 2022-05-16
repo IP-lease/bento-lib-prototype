@@ -1,6 +1,7 @@
-package com.iplease.lib.bento.api.error.type
+package com.iplease.lib.bento.util
 
 import com.iplease.lib.bento.api.error.data.ErrorData
+import com.iplease.lib.bento.api.error.type.ErrorType
 import kotlin.reflect.KClass
 
 object ErrorTypes {
